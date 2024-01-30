@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url(./common.css);
+
+body{
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+}
+
+/*header style*/
+header{
+    background-color: orange;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+header .inner-header{
+    background-color: tomato;
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+header .inner-header .logo{
+    flex: 1;
+}
+
+header .inner-header .logo img{
+    height: 60px;
+}
+
+header .inner-header .intro-text{
+    flex: 4;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+header .inner-header .menu-open{
+    border: 2px solid green;
+    flex: 1;
+    font-weight: bold;
+    font-size: 1.2em;
+    align-self: stretch;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .inner-header .menu-open .lnr-menu{
+    font-size: 33px;
+    margin-left: 15px;
+}
+
+/* gnb - > 숨겨진 메뉴(햄버거 버튼 클릭 시 등장)*/
+header .gnb{
+    background-color: #000;
+    color: #666;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 70px 100px;
+    height: 100vh;
+    /*완전 숨겨버림!*/
+    position: fixed;
+    right: -100%;
+    top: 0;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    transition: 0.5s;
+}
+
+header .gnb.open{
+    right: 0;
+}
+
+header .gnb .close{
+    color: #fff;
+    margin-left: 150px;
+}
+
+header .gnb ul{
+    line-height: 1.7;
+}
+
+header .gnb ul li:hover,
+header .gnb ul li.active{
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
