@@ -64,9 +64,42 @@
             </nav>
 
         </header>
+        <!-- end header -->
+        <!-- section visual-->
+        <section class="visual">
+            <ul class="slide">
+                <li>
+                    <img src="./imgsss/visual1.jpg" alt="슬라이드 이미지1">
+                    <div class="txt">
+                        <p>Creative design with ICT Studio</p>
+                        <h3>Website & APP, <br>Responsive Web and <br>Brand Identify</h3>
+                        <a href="#">See the Work <span class="lnr lnr-chevron-right"></span></a>
+                    </div>
+                    <span class="scroll">Scroll down</span>
+                </li>
+            </ul>
+        </section>
 
     </div>
 
+    <script>
+
+    $(document).ready(function() {
+
+        var bannerList = ["./imgsss/visual1.jpg", "./imgsss/visual2.jpg", "./imgsss/visual3.jpg", "./imgsss/visual4.jpg", "./imgsss/visual5.jpg", "./imgsss/visual6.jpg"];
+            var currentImageIndex = 0;
+            setInterval(function() {
+                $(".slide").attr("src", bannerList[currentImageIndex]);
+                currentImageIndex++;
+
+                if(currentImageIndex == bannerList.length) {
+                    currentImageIndex = 0;
+                }
+            }, 3000); 
+
+         } );
+
+    </script>
 
 </body>
 </html>
