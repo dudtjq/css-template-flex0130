@@ -13,3 +13,14 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     gnb.classList.remove('open');
 });
+
+var bannerList = ["./imgsss/visual1.jpg", "./imgsss/visual2.jpg", "./imgsss/visual3.jpg", "./imgsss/visual4.jpg", "./imgsss/visual5.jpg", "./imgsss/visual6.jpg"];
+var currentImageIndex = 0;
+setInterval(function() {
+    $("#bannerImage").attr("src", bannerList[currentImageIndex]);
+    currentImageIndex++;
+
+    if(currentImageIndex == bannerList.length) {
+        currentImageIndex = 0;
+    }
+}, 2000); 
